@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@mipmap/bg_logo"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+
+            <ImageView
+                android:id="@+id/image_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/nav_picture"
+                />
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/icon_return"
+                android:layout_marginLeft="35dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/rec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/back"
+                android:layout_marginLeft="5dp"
+                android:text="产品介绍"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                />
+            <TextView
+                android:id="@+id/usage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用方法"
+                android:layout_toRightOf="@+id/rec"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="75dp"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                />
+
+            <TextView
+                android:id="@+id/problem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="问题解答"
+                android:layout_toRightOf="@+id/usage"
+                android:layout_marginLeft="70dp"
+                android:layout_centerVertical="true"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                />
+
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@mipmap/icon_more_and_more"/>
+</RelativeLayout>

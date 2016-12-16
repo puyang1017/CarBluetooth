@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="PopListView_Entries_SE">
+        <item >随动电机1</item>
+        <item >随动电机2</item>
+    </string-array>
+
+    <string-array name="PopListView_Entries_EM">
+        <item >减速电机模式1</item>
+        <item >减速电机模式2</item>
+    </string-array>
+
+
+
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+</resources>
