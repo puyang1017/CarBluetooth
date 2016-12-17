@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.puy.carbluetooth.ActivityJeep">
+
+    <ImageView
+        android:layout_width="78.6dp"
+        android:layout_height="22.6dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/logo_translucent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/RelativeLayout_title"
+                >
+
+
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+                        <RelativeLayout
+                            android:id="@+id/Left_RelativeLayout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_centerVertical="true"
+
+                            >
+                            <RelativeLayout
+                                android:id="@+id/RelativeLayout_left1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="30dp"
+                                >
+                                <ImageView
+                                    android:id="@+id/image_left"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@mipmap/right_and_left"/>
+
+                                <SeekBar
+                                    android:id="@+id/SeekBarLeft1"
+                                    android:layout_width="84dp"
+                                    android:layout_height="wrap_content"
+                                    android:progressDrawable="@android:color/transparent"
+                                    android:thumb="@mipmap/button_sliding_around"
+                                    android:layout_centerInParent="true"
+                                    android:thumbOffset="16dp" />
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/Left_RelativeLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_centerVertical="true"
+
+                            >
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                >
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@mipmap/right_and_left"/>
+
+                                <SeekBar
+                                    android:id="@+id/SeekBarLeft2"
+                                    android:layout_width="84dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:progressDrawable="@android:color/transparent"
+                                    android:thumb="@mipmap/button_sliding_around"
+                                    android:thumbOffset="16dp"
+                                    />
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/Right_RelativeLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/RelativeLayout_mode2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+
+                            android:background="@mipmap/action_buttons_ringht"/>
+
+                        <SeekBar
+                            android:id="@+id/SeekBarRight"
+                            android:layout_width="134dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:progressDrawable="@android:color/transparent"
+                            android:thumb="@mipmap/btn_sliding_left_and_right"
+                            android:thumbOffset="16dp"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerHorizontal="true">
+                            <ImageView
+                                android:layout_width="118dp"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="13dp"
+                                android:background="@drawable/calibration_no"/>
+                            <ProgressBar android:id="@+id/progressbar_bottom_right"
+                                style="@android:style/Widget.ProgressBar.Horizontal"
+                                android:progressDrawable="@drawable/audioseekbar_bottom_style"
+                                android:layout_width="59dp"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="13dp"
+                                android:progress="0"></ProgressBar>
+                            <ProgressBar android:id="@+id/progressbar_top_right"
+                                style="@android:style/Widget.ProgressBar.Horizontal"
+                                android:progressDrawable="@drawable/audioseekbar_top_style"
+                                android:layout_width="59dp"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="13dp"
+                                android:layout_toRightOf="@+id/progressbar_bottom_right"
+                                android:progress="0"></ProgressBar>
+
+
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+
+
+                <ImageView
+                    android:id="@+id/image_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/top_l"
+                    />
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/icon_return"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/back"
+                    android:layout_marginLeft="5dp"
+                    android:text="DINO"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/white"
+                    />
+                <TextView
+                    android:id="@+id/speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="速度"
+                    android:layout_toRightOf="@+id/image_title"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="17dp"
+                    android:textColor="#37A6F7"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/angle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="方向盘"
+                    android:layout_toLeftOf="@+id/speed"
+                    android:layout_marginRight="60dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone"
+                    />
+
+                <ImageButton
+                    android:id="@+id/btn_off_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_click_off"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@+id/info"
+                    />
+
+                <ImageButton
+                    android:id="@+id/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_click_info"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                >
+
+                <ImageButton
+                    android:id="@+id/stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_stop"/>
+
+                <ImageButton
+                    android:id="@+id/start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_start"
+                    android:layout_marginLeft="20dp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:id="@+id/save"
+                android:layout_centerInParent="true"
+                android:layout_width="115dp"
+                android:layout_height="45dp"
+                android:background="@drawable/btn"
+                android:text="保存"
+                android:textSize="17dp"
+                android:textColor="#37A6F7"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

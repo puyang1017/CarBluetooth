@@ -146,32 +146,32 @@ public class ActivityMenu extends Activity implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        Intent intent;
-        switch (v.getId()){
-            case R.id.car:
+            Intent intent;
+            switch (v.getId()){
+                case R.id.car:
                     intent = new Intent(this,ActivityCarSelect.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     this.startActivity(intent);
-                break;
-            case R.id.dino:
-//                intent = new Intent(this,ActivitySESetting.class);
-//                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                this.startActivity(intent);
-                break;
-            case R.id.toystudy:
-                intent = new Intent(this, ActivityRecommend.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                this.startActivity(intent);
-                break;
-            case R.id.bluetooth:
-                intent = new Intent(this, DeviceScanActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                this.startActivity(intent);
-                break;
-            default:
-                break;
+                    break;
+                case R.id.dino:
+                    intent = new Intent(this,ActivityDino.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    this.startActivity(intent);
+                    break;
+                case R.id.toystudy:
+                    intent = new Intent(this, ActivityRecommend.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    this.startActivity(intent);
+                    break;
+                case R.id.bluetooth:
+                    intent = new Intent(this, DeviceScanActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    this.startActivity(intent);
+                    break;
+                default:
+                    break;
 
-        }
+            }
     }
 
 

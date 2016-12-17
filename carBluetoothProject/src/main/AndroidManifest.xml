@@ -31,6 +31,7 @@ PackageManager.hasSystemFeature(FEATURE_BLUETOOTH_LE) -->
         <service android:name="bluetooth.BluetoothLeService" android:enabled="true"/>
         <activity android:name=".ActivityMenu" android:theme="@style/AppThemeAnimation" android:screenOrientation="landscape"></activity>
         <activity android:name=".ActivityJeep" android:theme="@style/AppThemeAnimation" android:screenOrientation="landscape"></activity>
+        <activity android:name=".ActivityDino" android:theme="@style/AppThemeAnimation" android:screenOrientation="landscape"></activity>
         <activity android:name=".ActivityRacing" android:theme="@style/AppThemeAnimation" android:screenOrientation="landscape"></activity>
         <activity android:name=".ActivitySESetting" android:theme="@style/AppThemeAnimation" android:screenOrientation="landscape"></activity>
         <activity android:name=".ActivityEMSetting" android:theme="@style/AppThemeAnimation" android:screenOrientation="landscape"></activity>
